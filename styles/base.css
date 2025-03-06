@@ -1,6 +1,22 @@
 :root {
-    --heading-font: Parkinsans, sans-serif;
+    --heading-font: Jost, sans-serif;
     --paragraph-font: Parkinsans, sans-serif;
+}
+
+
+.profile {
+    display: flex;
+    background-color: blue; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, blue, purple);    
+    color: #ffffff;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--heading-font);
+}
+
+.profile img {
+    margin: auto;
 }
 
 header,
@@ -9,19 +25,12 @@ footer {
     margin-top: 10px;
 }
 
-.profile {
-    display: flex;
-    background-color: darkgreen;
-    color: #ffffff;
-    padding: 10px 0px;
-}
 
-.profile img {
-    margin: auto;
-}
 
 h1 {
-    margin: 90px 70px 0px 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
 }
 
 body {
@@ -31,11 +40,13 @@ body {
 
 h2 {
     /* color: #004687; */
-    background-color: darkgreen;
-    color: #ffffff;
+    background-color: rgb(11, 11, 208);
+    color: lightgray;
     font-family: var(--heading-font);
     margin: auto;
     text-align: center;
+    border-radius: 0 0 0 10px;
+    font-family: var(--heading-font);
 }
 
 #menu {
@@ -55,11 +66,15 @@ h2 {
     content: "❌";
 }
 
+.navigation ul {
+    padding: 0;
+}
+
 .navigation {
     list-style-type: none;
     margin: 0 auto;
     max-width: 500px;
-    padding-top: 20px;
+    padding: 20px 0 0 0;
 }
 
 .navigation li {
@@ -76,6 +91,7 @@ h2 {
     text-align: center;
     padding: 1rem;
     text-decoration: none;
+    border: #000 solid 5px;
 }
 
 .navigation.open {
@@ -88,24 +104,27 @@ h2 {
 
 .navigation a:hover {
     font-weight: 600;
-    color: #fbff00;
-    border: #fbff00 solid 2px;
+    background-color: rgba(11, 11, 208, 0.8);
+    border-radius: 70px;
+    color: lightgray;
 }
 
 nav a {
     text-decoration: none;
 }
 
-/* .active::before { 
-	content: "📍"; */
+nav .active {
+    background-color: #fff;
+    border: solid 2px #fff;
+    border-radius: 70px;
+    color: #000;
+    margin: 5px;
+ }
+
 
 main {
     align-items: center;
     max-width: 90%;
-}
-
-figcaption {
-    text-align: center;
 }
 
 /* Class Selectors */
@@ -113,146 +132,33 @@ figcaption {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.card1 {
+.card {
     border: 3px solid #969696;
     margin: 10px 0 10px 10%;
+    padding: 0 0 20px 20px;
     box-shadow: 0 0 10px #404040;
-    grid-column: 1/1;
+    /* grid-column: 1/1; */
 }
 
-.card2 {
-    border: 3px solid #969696;
-    margin: 10px 0 10px 10%;
-    box-shadow: 0 0 10px #404040;
-    grid-column: 1/1;
-}
-
-.card2 img {
-    margin: auto;
-    animation-name: fadeIn 30s ease-in-out;
-
-    @keyframes fadeIn {
-        from { opacity: 0; } 
-        to { opacity: 1; } 
-    }
-}
-
-
-.card3 {
-    border: 3px solid #969696;
+.card li {
+    list-style-type: none;
+    padding: 0;
     margin: 10px 0 10px 0;
-    box-shadow: 0 0 10px #404040;
-    grid-column: 1/1;
 }
 
-
-
-.filter-buttons ul {
+#info {
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding: 0;
 }
 
-.filter-buttons a {
-    display: inline-block;
-    border: 2px solid #fff;
-    background-color: #000;
-    color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #404040;
-    padding: 10px 25px;
-    margin: 10px 0px 10px 0px;
-    text-decoration: none;
-}
-
-.filter-buttons li {
-    display: block;
-}
-
-.filter-buttons a:hover {
-    font-weight: 600;
-    color: #fbff00;
-    border: #fbff00 solid 2px;
-}
-
-
-/* course button container */
-#coursecard {
-    text-align: center;
-    display: grid;
-    gap: 20px;
-    border: 5px solid #fff;
-    grid-template-columns: auto;
-    justify-content: space-evenly;
-}
-
-/* course buttons */
-.course {
-    border: 2px solid #fff;
-    background-color: #04046f;
-    color: #fff;
-    box-shadow: 0 0 10px #404040;
-    padding: 0px 70px;
-    margin: 10px 0px 10px 0px;
-}
-
-.course-false {
-    border: 2px solid #fff;
-    background-color: #6b6b6d;
-    color: #fff;
-    box-shadow: 0 0 10px #404040;
-    padding: 0px 70px;
-    margin: 10px 0px 10px 0px;
-}
-
-dialog {
-    border: solid 2px darkgreen;
-    box-shadow: 0 0 10px gray;
-    padding: 0 1rem 1rem 1rem;
-    width: 60%;
-    height: 65%;
-    max-width: 500px;
-    position: fixed;
-    z-index: 1;
-}
-
-dialog h3 {
-    background-color: #04046f;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-dialog h4 {
-    text-align: center;
-}
-
-::backdrop {
-    background-color: gray;
-    opacity: .8;
-}
-
-#closebutton {
-    position: absolute;
-    bottom: 0%;
-    right: 40%;
-    padding: 10px;
-    margin: 15px 0 15px 0;
-    border: solid 1px #000;
-    width: 100px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-#course:hover {
-    background-color: darkgreen;
-}
 
 footer {
     font-size: .75em;
     text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
 }

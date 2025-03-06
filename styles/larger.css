@@ -1,0 +1,39 @@
+@media screen and (min-width: 600px) {
+
+
+	.profile img {
+		margin: 5px 5px 5px 550px;
+	}
+
+
+	h3 {
+		font-size: 1em;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		max-width: 100%;
+		justify-content: space-around;
+		background-color: black;
+	}
+
+	.navigation li {
+		display: block;
+	}
+
+	.navigation ul {
+		display: flex;
+		flex: 1 1 100%;
+	}
+
+	.grid-container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
