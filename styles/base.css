@@ -13,15 +13,12 @@
     justify-content: center;
     align-items: center;
     font-family: var(--heading-font);
+    font-size: 1rem;
 }
 
 .profile img {
     margin: auto;
-    box-shadow: lightgray 10px;
-}
-
-.profile span {
-    font-size: 1rem;
+    box-shadow: 0 8px 8px 0 lightgray;
 }
 
 header,
