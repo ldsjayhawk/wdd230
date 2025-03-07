@@ -4,7 +4,7 @@
 }
 
 .profile {
-    display: flex;
+    display: grid;
     background-color: darkblue; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, darkblue, purple);    
     color: #ffffff;
@@ -13,10 +13,11 @@
     align-items: center;
 }
 
-.profile p {
+.profile span {
     font-size: 1.5rem;
     font-family: var(--heading-font);
     font-weight: 700;
+    justify-content: right;
 }
 
 .profile img {
