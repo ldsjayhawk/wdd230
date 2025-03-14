@@ -19,7 +19,7 @@ button.addEventListener("click", () => {
         input.focus();
 
     } else {
-        console.log('You did not enter a scripture')
+        alert('You did not enter a scripture')
         input.focus();
     }
 });
