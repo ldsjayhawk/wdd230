@@ -11,6 +11,7 @@ header {
     background-color: #DAF7FF;
     color: #000;
     margin: 1.25rem;
+    padding: 0 10px 0 10px;
 }
 
 header p {
@@ -39,7 +40,6 @@ h2 {
     color:#000;
     margin: 0 0 0 20px;
 }
-
 
 main p {
     font-family: var(--paragraph-font);
@@ -130,6 +130,7 @@ nav a {
 footer {
     background-color: darkgreen;
     padding: 10px;
+    margin: 0 10px 0 10px;
 }
 
 footer p {
@@ -155,7 +156,6 @@ footer p {
     width: 100%;
     height: auto;
     position: relative;
-    padding: 10px;
 }
 
 .hero article {
