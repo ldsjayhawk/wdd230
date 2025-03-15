@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     background-color: #DAF7FF;
     color: #000;
-    padding: 1.25rem;
+    margin: 1.25rem;
 }
 
 header p {
@@ -197,21 +197,25 @@ figcaption {
     text-align: center;
 }
 
-.info-box, .weather-box{
+.info-box, .spotlight{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 5px;
     align-items: stretch;
+    margin: 0 10px 0 10px;
 }
 
 .events, .weather, .spotlight {
     flex: 1;
-    padding: 10px;
     background-color: #DAF7FF;
     margin: 0 auto;
     box-sizing: border-box;
     margin:  10px;
+}
+
+.events, .weather {
+    padding: 10px; 
 }
 
 .weather-info p (
