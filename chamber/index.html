@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- main info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WDD 231 - Chamber Directory Page - Cris Altman</title>
+    <meta name="description" content="WDD 231 Chamber Home Page | Cris Altman">
+    <meta name="author" content="Cris Altman">
+    
+    <!-- normalize link -->
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    <!-- javascript reference links -->
+    <script src="scripts/home.js" type="module"></script>
+    <script src="scripts/weather.mjs" type="module"></script>
+    <script src="scripts/forecast.mjs" type="module"></script>
+    <script src="scripts/footer.mjs" type="module"></script>
+
+    <!-- css reference links -->
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+
+    <!-- other styling -->
+    <link rel="icon" href="opfavicon.ico">
+
+    <!-- social media tags -->
+    <meta property="og:title" content="WDD 231 - Overland Park Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ldsjayhawk.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://ldsjayhawk.github.io/wdd231/chamber/images/opclocktower.webp">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="headerpic">
+            <img src="/chamber/images/opclocktower.webp" alt="Overland Park Clocktower" width="150">
+        </div>
+        <section>
+            <h1>Overland Park</h1>
+            <p>Chamber of Commerce</p>
+        </section>
+        <nav>
+            <a id="menu" href="#" aria-label="navgation menu"></a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="/chamber/directory.html">Directory</a></li>
+                <li><a href="/chamber/join.html">Join</a></li>
+                <li><a href="/chamber/discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- hero image -->
+        <div class="hero">
+            <figure>
+                <img src="/chamber/images/prairiefire.webp" alt="PrairieFire Museum" width="900">
+                <figcaption>PrairieFire Museum - Overland Park, KS</figcaption>
+            </figure>
+            <article class="action">    
+                <h2><a href="/chamber/join.html">Become a member today!</a></h2>
+            </article>  
+        </div>
+
+        <!-- home heading -->
+        <section class="home">
+            <h2>Home</h2>
+        </section>
+
+        <!-- info boxes events, weather and forecast-->
+        <div class="info-box">
+            <section class="events">
+                <h3>Events</h3>
+            </section>
+            <section class="weather">
+                <h3>Current Weather</h3>
+                <div class="weather-box"></div>
+                    <div class="weather-image">
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption><span id="figcaption"></span></figcaption>
+                        </figure>
+                        <!-- <img class = "weather-icon" src="images/weather-icon.svg" alt="weather" width="50"> -->
+                    </div>
+                    <div class="weather-info">
+                        <p><span id="current-temp"></span>° F</p>    
+                        <p><span id="condition"></span></p>
+                        <p><span id="high"></span>° F</p>
+                        <p><span id="low"></span>° F</p>
+                        <p><span id="humidity"></span>%</p>
+                        <p><span id="sunrise"></span></p>
+                        <p><span id="sunset"></span></p>
+                    </div>
+            </section>
+            <section class="forecast">
+                <h3>Weather Forecast</h3>
+                <p>Today: <span id="today-temp"></span>° F</p>
+                <p>Tomorrow: <span id="tomorrow-temp"></span>° F</p>    
+                <p><span id="weekday"></span>: <span id="day-three-temp"></span>° F</p>    
+            </section>
+        </div>
+
+        <!-- company spotlights -->
+    </section>
+    <div class="card-container">
+        <div id="cards"></div>
+    </div>
+    </section>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item address">
+                <h4>Overland Park Chamber of Commerce</h4>
+                <p>9001 W 110th St #150</p>
+                <p>Overland Park, KS 66210</p>
+                <a href="info@opchamber.org">info@opchamber.org</a>
+                <p>913-491-3600</p> 
+            </div>
+            <div class="footer-item social">
+                <a href="http://www.youtube.com" target="_blank"> <img src="images/youtube-icon.png" alt="Youtube"></a>
+                <a href="http://www.instagram.com" target="_blank"> <img src="images/instagram-icon.png"
+                        alt="Instagram"></a>
+                <a href="http://www.x.com" target="_blank"> <img src="images/x-icon.png" alt="X"></a>
+            </div>
+            <div class="footer-item project">
+                <p>WDD231 Class Project</p>
+                <p>Cris Altman</p>
+                <p>©️<span id="currentyear"></span> Overland Park Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

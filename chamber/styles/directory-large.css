@@ -1,0 +1,65 @@
+@media screen and (min-width: 768px) {
+
+#menu {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    justify-content: flex-start;
+}
+
+.navigation li {
+    display: block;
+}
+
+.navigation a {
+    color: #000;
+}
+
+.navigation a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.navigation ul {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+/* ...home page... */
+
+
+.hero article h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
+.action a {
+    font-size: 1em;
+}
+
+.info-box {
+    flex-direction: row;
+}
+
+.weather-box {
+    flex-direction: row;
+}
+
+.selection a:hover {
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.cards-container {
+    grid-template-columns: auto auto auto;
+}
+
+}

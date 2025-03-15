@@ -1,0 +1,59 @@
+    { "members": [
+        {
+            "name" : "Shamrock",
+            "address" : "9300 Metcalf Ave, Overland Park, KS 66212",
+            "phone" : "913-310-2221",
+            "url" : "https://shamrocktradingcorp.com/",
+            "image" : "images/shamrock.webp",
+            "membership" : 2
+        },
+        {
+            "name" : "Black & Veatch",
+            "address" : "11401 Lamar Ave, Overland Park, KS 66211",
+            "phone" : "913-458-2000",
+            "url" : "https://www.bv.com/en-US",
+            "image" : "images/bv.svg",
+            "membership" : 3
+        },
+        {
+            "name" : "Advent Health",
+            "address" : "9100 W 74th St, Merriam, KS 66204",
+            "phone" : "913-676-2000",
+            "url" : "https://www.adventhealth.com/",
+            "image" : "images/advent.webp",
+            "membership" : 3
+        },
+        {
+            "name" : "Central Bank",
+            "address" : "7840 Metcalf Ave, Overland Park, KS 66204",
+            "phone" : "866-236-8744",
+            "url" : "https://www.centralbank.net/",
+            "image" : "images/centralbank.svg",
+            "membership" : 2
+        },
+        {
+            "name" : "Taco Naco",
+            "address" : "8220 Metcalf Avenue, Overland Park, KS, USA 66204",
+            "phone" : "913-730-8565",
+            "url" : "https://taconacokc.com/",
+            "image" : "images/taconaco.webp",
+            "membership" : 1
+        },
+        {
+            "name" : "Quiktrip", 
+            "address" : "5725 Foxridge Dr, Mission, KS 66202",
+            "phone" : "913-362-3700",
+            "url" : "https://www.quiktrip.com/",
+            "image" : "images/qt.svg",
+            "membership" : 3
+        },
+        {
+            "name" : "Heartland Soccer Association",
+            "address" : "6450 Sprint Pkwy Suite A, Overland Park, KS 66211",
+            "phone" : "913-888-8768",
+            "url" : "https://www.heartlandsoccer.net/",
+            "image" : "images/heartland.webp",
+            "membership" : 1
+        }
+    ]
+}
