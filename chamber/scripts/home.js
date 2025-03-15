@@ -2,7 +2,7 @@
 // import { displayMembers } from "./directory";
 import { apiFetch } from "./weather.mjs";
 import { forecastFetch } from "./forecast.mjs";
-import { lastModifiedDate } from "./footer.mjs";
+import { copyrightYear, lastModifiedDate } from "./footer.mjs";
 // import { hamburgerMenu } from "./menu.mjs";
 
 // hamburgerMenu();
@@ -66,5 +66,5 @@ apiFetch();
 forecastFetch();
 
 // footer info
-// copyrightYear();
+copyrightYear();
 lastModifiedDate();

@@ -1,9 +1,8 @@
-// copyright year
-// export function copyrightYear() {
-//     const d = new Date();
-//     let currentyear = d.getFullYear();
-//     document.getElementById("currentyear").innerHTML = currentyear;
-//     };
+export function copyrightYear() {
+    const d = new Date();
+    let currentyear = d.getFullYear();
+    document.getElementById("currentyear").innerHTML = currentyear;
+    };
 
 
 // set last modified date options
