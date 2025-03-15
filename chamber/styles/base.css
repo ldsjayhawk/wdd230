@@ -7,13 +7,17 @@
 
 header {
     display: flex;
+    justify-content: space-between;
     background-color: #DAF7FF;
     color: #000;
+    padding: 1.25rem;
 }
 
 header p {
     color:#000;
     font-family: var(--heading-font);
+    font-size: 1.5em;
+    margin: 0;
 }
 
 .headerpic {
@@ -87,6 +91,7 @@ main p {
     display: block;
     padding: 1rem;
     text-decoration: none;
+    font-family: var(--paragraph-font);
 }
 
 .navigation.open {
@@ -107,7 +112,7 @@ nav a {
     border-radius: 10px;
 }
 
-.footer-container {
+/* .footer-container {
     display: flex;
     flex-wrap: nowrap;
     flex: auto;
@@ -116,22 +121,23 @@ nav a {
     align-items: center;
     gap: 5px;
     padding: 10px;
-}
+} */
 
 .social {
     align-items: center;
 }
 
 footer {
-    font-size: .75em;
     background-color: darkgreen;
+    padding: 10px;
 }
 
-footer h4, p, a {
+footer p {
+    font-size: .75em;
     color: #fff;
-    padding: 0;
-    margin: 0;
+    text-align: center;
     font-family: var(--paragraph-font);
+    margin: 0;
 }
 
 /* ...home page... */
@@ -172,8 +178,9 @@ footer h4, p, a {
 }
 
 .action a {
-    color: blue;
+    color: red;
     font-family: var(--heading-font);
+    
 }
 
 h3 {
@@ -200,7 +207,7 @@ figcaption {
     align-items: stretch;
 }
 
-.events, .weather, .forecast {
+.events, .weather, .spotlight {
     flex: 1;
     padding: 10px;
     background-color: #DAF7FF;
@@ -208,6 +215,10 @@ figcaption {
     box-sizing: border-box;
     margin:  10px;
 }
+
+.weather-info p (
+    text-align: center;
+)
 
 #current-temp , #today-temp, #tomorrow-temp, #day-three-temp {
     font-size: larger;

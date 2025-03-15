@@ -9,13 +9,13 @@ export async function forecastFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const forecastdata = await response.json();
-            console.log(forecastdata)
+            // console.log(forecastdata)
             displayForecast(forecastdata);
         } else {
             throw Error(await response.text());
         }
     } catch (error) {
-                console.log(error);
+                // console.log(error);
             }
     }
 

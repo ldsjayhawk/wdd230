@@ -2,7 +2,7 @@
 
 const currentTemp = document.querySelector('#current-temp');
 const highTemp = document.querySelector('#high');
-const today = document.querySelector('#today-temp');
+// const today = document.querySelector('#today-temp');
 const lowTemp = document.querySelector('#low');
 const humidity = document.querySelector('#humidity');
 // const sunrise = document.querySelector('#sunrise');
@@ -16,7 +16,7 @@ export async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data)
+            // console.log(data)
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -35,7 +35,7 @@ export async function apiFetch() {
 function displayResults(data) {
     currentTemp.innerHTML = `${Math.round(data.main.temp)}`
     highTemp.innerHTML = `High Temp: ${Math.round(data.main.temp_max)}`
-    today.innerHTML = `${Math.round(data.main.temp_max)}`
+    // today.innerHTML = `${Math.round(data.main.temp_max)}`
     lowTemp.innerHTML = `Low Temp: ${Math.round(data.main.temp_min)}`
     humidity.innerHTML = `Humidity: ${data.main.humidity}`
     // sunrise.innerHTML = `Sunrise: ${data.sys.sunrise}`

@@ -26,8 +26,8 @@
     <script src="scripts/footer.mjs" type="module"></script>
 
     <!-- css reference links -->
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <!-- other styling -->
     <link rel="icon" href="opfavicon.ico">
@@ -53,9 +53,9 @@
             <a id="menu" href="#" aria-label="navgation menu"></a>
             <ul class="navigation">
                 <li><a href="#" class="active">Home</a></li>
+                <li><a href="/chamber/discover.html">Discover</a></li>
                 <li><a href="/chamber/directory.html">Directory</a></li>
                 <li><a href="/chamber/join.html">Join</a></li>
-                <li><a href="/chamber/discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
@@ -101,45 +101,36 @@
                         <p><span id="sunrise"></span></p>
                         <p><span id="sunset"></span></p>
                     </div>
+                </div>
             </section>
-            <section class="forecast">
-                <h3>Weather Forecast</h3>
-                <p>Today: <span id="today-temp"></span>° F</p>
-                <p>Tomorrow: <span id="tomorrow-temp"></span>° F</p>    
-                <p><span id="weekday"></span>: <span id="day-three-temp"></span>° F</p>    
+            <section class="spotlight">
+                <h3>Company spotlights</h3>
+                <p>Place holder for company spotlights</p>
+                <!-- <p>Today: <span id="today-temp"></span>° F</p> -->
             </section>
-        </div>
-
+            
+            <!-- forecast -->
+            <!-- <p>Tomorrow: <span id="tomorrow-temp"></span>° F</p>     -->
+            <!-- <p><span id="weekday"></span>: <span id="day-three-temp"></span>° F</p>     -->
         <!-- company spotlights -->
-    </section>
+    <!-- </section>
     <div class="card-container">
         <div id="cards"></div>
     </div>
     </section>
 
-    </main>
+    </main> -->
+    <!-- <div class="footer-item social">
+        <a href="http://www.youtube.com" target="_blank"> <img src="images/youtube-icon.png" alt="Youtube"></a>
+        <a href="http://www.instagram.com" target="_blank"> <img src="images/instagram-icon.png"
+                alt="Instagram"></a>
+        <a href="http://www.x.com" target="_blank"> <img src="images/x-icon.png" alt="X"></a>
+    </div> -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-item address">
-                <h4>Overland Park Chamber of Commerce</h4>
-                <p>9001 W 110th St #150</p>
-                <p>Overland Park, KS 66210</p>
-                <a href="info@opchamber.org">info@opchamber.org</a>
-                <p>913-491-3600</p> 
-            </div>
-            <div class="footer-item social">
-                <a href="http://www.youtube.com" target="_blank"> <img src="images/youtube-icon.png" alt="Youtube"></a>
-                <a href="http://www.instagram.com" target="_blank"> <img src="images/instagram-icon.png"
-                        alt="Instagram"></a>
-                <a href="http://www.x.com" target="_blank"> <img src="images/x-icon.png" alt="X"></a>
-            </div>
-            <div class="footer-item project">
-                <p>WDD231 Class Project</p>
-                <p>Cris Altman</p>
-                <p>©️<span id="currentyear"></span> Overland Park Chamber of Commerce</p>
-                <p>Last Modification: <span id="lastModified"></span></p>
-            </div>
-        </div>
+        <p>WDD231 Class Project</p>
+        <p>Cris Altman</p>
+        <!-- <p>©️<span id="currentyear"></span> Overland Park Chamber of Commerce</p> -->
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
