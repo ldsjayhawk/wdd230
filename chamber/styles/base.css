@@ -222,11 +222,11 @@ figcaption {
     margin:  10px;
 }
 
-.weather-info p (
+.weather-info p {
     text-align: center;
-)
+}
 
-#current-temp , #today-temp, #tomorrow-temp, #day-three-temp {
+#current-temp, #today-temp, #tomorrow-temp, #day-three-temp {
     font-size: larger;
     font-weight: 900;
     margin-bottom: 10px;
