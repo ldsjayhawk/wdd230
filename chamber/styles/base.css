@@ -211,11 +211,15 @@ figcaption {
     background-color: #DAF7FF;
     margin: 0 auto;
     box-sizing: border-box;
-    margin:  10px;
+}
+
+.spotlight {
+    margin: 10px 10px 20px 10px;
 }
 
 .events, .weather {
     padding: 10px; 
+    margin:  10px;
 }
 
 .weather-info p (
