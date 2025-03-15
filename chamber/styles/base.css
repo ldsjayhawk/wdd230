@@ -211,6 +211,7 @@ figcaption {
     background-color: #DAF7FF;
     margin: 0 auto;
     box-sizing: border-box;
+    padding: 10px; 
 }
 
 .spotlight {
@@ -218,7 +219,6 @@ figcaption {
 }
 
 .events, .weather {
-    padding: 10px; 
     margin:  10px;
 }
 
