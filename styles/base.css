@@ -5,8 +5,9 @@
 
 .profile {
     display: grid;
-    background-color: darkblue; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, darkblue, purple);    
+    background-color: darkblue;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, darkblue, purple);
     color: #ffffff;
     padding: 10px 0px;
     justify-content: center;
@@ -68,6 +69,8 @@ h2 {
     font-size: 1.5rem;
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
 }
 
 #menu {
@@ -77,6 +80,7 @@ h2 {
     right: 10px;
     font-size: 1.5rem;
     color: #fff;
+    padding: 5px;
 }
 
 #menu::before {
@@ -140,7 +144,7 @@ nav .active {
     border-radius: 70px;
     color: #000;
     margin: 5px;
- }
+}
 
 
 main {
