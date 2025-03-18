@@ -160,27 +160,29 @@ footer p {
 
 .hero article {
     position: absolute;
-    background-color: #DAF7FF;
-    z-index: 3;
-    top: 20%;
-    left: 15%;
-    width: 45%;
-    height: 18%;
     padding-top: .8em;
     opacity: .8;
     box-sizing: border-box;
     }
 
-.hero article h2 {
-    font-family: var(--heading-font);
-    font-size: .7em;
-    font-weight: 700;
+.action a {
+    /* z-index: 3;
+    top: 20%;
+    left: 15%;
+    width: 45%;
+    height: 18%; */
+    background-color: #d80e0e;
+    color: #fff;
+    font-family: var(--paragraph-font);
+    font-size: 700;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;    
 }
 
-.action a {
-    color: red;
-    font-family: var(--heading-font);
-    
+.action a:hover {
+    background-color: rgb(206, 206, 206);
+    color: #d80e0e
 }
 
 h3 {
