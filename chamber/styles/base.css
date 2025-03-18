@@ -164,11 +164,6 @@ footer p {
     }
 
 .action a {
-    /* z-index: 3;
-    top: 20%;
-    left: 15%;
-    width: 45%;
-    height: 18%; */
     background-color: #d80e0e;
     color: #fff;
     font-family: var(--paragraph-font);
@@ -179,7 +174,7 @@ footer p {
 }
 
 .action a:hover {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(210, 208, 208);
     color: #d80e0e
 }
 
