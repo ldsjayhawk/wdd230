@@ -1,19 +1,23 @@
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 450px) {
 
     .hero article {
-        top: 13%;
-        left: 10%;
+        top: 8%;
+        left: 12%;
         width: 45%;
         height: 10%;
     }
     
+    
+}
 
- }
+@media screen and (min-width: 940px) {
 
-@media screen and (min-width: 768px) { 
-
-
+h1 {
+    padding-top: 50px;
+    margin: 0;
+}
+    
 #menu {
     display: none;
 }
@@ -63,6 +67,10 @@
 .weather-box {
     flex-direction: row;
 }
+}
 
+@media screen and (min-width: 940px) { 
+
+}
 }
 

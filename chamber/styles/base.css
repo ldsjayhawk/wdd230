@@ -26,10 +26,8 @@ header p {
 }
 
 h1 {
-    padding-top: 30px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    flex: 1;
+    padding-top: 10px;
+    margin: 0;
 }
 
 h1, h2, h3{
@@ -181,7 +179,7 @@ footer p {
 }
 
 .action a:hover {
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(61, 61, 61);
     color: #d80e0e
 }
 
