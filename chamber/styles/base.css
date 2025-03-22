@@ -126,9 +126,15 @@ nav a {
 }
 
 footer {
+    display: flex;
+    justify-content: space-around;
     background-color: darkgreen;
     padding: 10px;
     margin: 0 10px 0 10px;
+}
+
+.footer-container {
+    text-align: center;
 }
 
 footer p {
@@ -161,13 +167,13 @@ footer p {
     padding-top: .8em;
     opacity: .8;
     box-sizing: border-box;
-    }
+}
 
 .action a {
     background-color: #d80e0e;
     color: #fff;
     font-family: var(--paragraph-font);
-    font-size: 700;
+    font-weight: 700;
     padding: 10px;
     text-decoration: none;
     border-radius: 10px;    
