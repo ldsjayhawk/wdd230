@@ -66,4 +66,20 @@ h1 {
 .weather-box {
     flex-direction: row;
 }
+
+/* ...directory page... */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sidebar {
+    max-width: 400px;
+    align-items: center;
+}
+
+img:hover {
+    box-shadow: 25px;
+}
 }

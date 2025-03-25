@@ -2,13 +2,13 @@
 <html lang="en-US">
 
 <head>
-    <!-- main info -->
+    <!-- max-width info -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>WDD 231 - Chamber Directory Page - Cris Altman</title>
-    <meta name="description" content="WDD 231 Chamber Directory Page | Cris Altman">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 230 - Chamber of Commerce Home Page - Cris Altman</title>
+    <meta name="description" content="WDD 230 Chamber of Commerce Home Page | Cris Altman">
     <meta name="author" content="Cris Altman">
-    
+
     <!-- normalize link -->
     <link rel="stylesheet" href="styles/normalize.css">
 
@@ -20,76 +20,113 @@
         rel="stylesheet">
 
     <!-- javascript reference links -->
-    <script src="scripts/home.js" type="module"></script>
-    <script src="scripts/weather.mjs" type="module"></script>
-    <script src="scripts/forecast.mjs" type="module"></script>
-    <script src="scripts/footer.mjs" type="module"></script>
+    <script src="scripts/discover.js" type="module"></script>
 
     <!-- css reference links -->
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <!-- other styling -->
     <link rel="icon" href="opfavicon.ico">
 
     <!-- social media tags -->
-    <meta property="og:title" content="WDD 231 - Overland Park Chamber of Commerce">
+    <meta property="og:title" content="WDD 230 - Overland Park Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ldsjayhawk.github.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="https://ldsjayhawk.github.io/wdd231/chamber/images/opclocktower.webp">
+    <meta property="og:url" content="https://ldsjayhawk.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://ldsjayhawk.github.io/wdd230/chamber/images/opclocktower.webp">
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div class="headerpic">
-            <img src="/chamber/images/opclocktower.webp" alt="Overland Park Clocktower" width="150">
+            <img src="images/opclocktower.webp" alt="Overland Park Clocktower" width="150">
         </div>
-        <div>
-            <h1>Overland Park</h1>
-            <p>Chamber of Commerce</p>
-        </div>
+        <section>
+            <h1>Overland Park Chamber of Commerce</h1>
+        </section>
         <nav>
             <a id="menu" href="#" aria-label="navgation menu"></a>
             <ul class="navigation">
-                <li><a href="/chamber/index.html">Home</a></li>
-                <li><a href="/chamber/directory.html">Directory</a></li>
-                <li><a href="/chamber/join.html">Join</a></li>
+                <li><a href="chamber\index.html">Home</a></li>
                 <li><a href="#" class="active">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <!-- /chamber/discover.html
+                /chamber/directory.html
+                /chamber/join.html -->
             </ul>
         </nav>
     </header>
-    <main>
-        <!-- <div class="hero-image">
-            <figure>
-                <img src="/chamber/images/prairiefire.webp" alt="PrairieFire Museum" width="900" height="auto">
-                <figcaption>PrairieFire Museum - Overland Park, KS</figcaption>
-            </figure>
-        </div> -->
-        <h2>Discover</h2>
- 
-    </main>
+
+    <max-width>  
+        <section class="grid-container">
+            <aside>
+                <section>
+                    <h2><span id="visitMessage"></span></h2>
+                </section>
+                <section class="sidebar">
+                    <h3>History & Geography</h3>
+                    <p>The city of Overland Park was incorporated on May 20, 1960. Located in Johnson County, it is currently the second largest city in Kansas.  The city stretches from county line to county line, north to south. Overland Park is part of the Kansas City Metropoilitan area.</p>
+                </section>        
+                <section class="sidebar">
+                    <h3>Statistical Profile</h3>
+                    <p>Total Area: 75.64 sq mi (195.91 km2)
+                    <p>Land Area	75.18 sq mi (194.72 km2)</p>
+                    <p>Water Area 0.46 sq mi (1.19 km2)</p>
+                    <p>Elevation	951 ft (290 m)</p>   
+                    <p>Population (2020): 197,238</p>
+                    <p>Population Density	2,600/sq mi (1,000/km2)</p>
+                </section>
+            </aside>
+            <section class="images">
+                <picture>
+                    <source srcset="images/deanna-rose-small.webp" media="(max-width: 600px)">
+                    <img class="lazy" loading="lazy" src="images/deanna-rose-farm.webp" alt="Deanna Rose Farmstead" width="700" height="350">
+                    <figcaption>Deanna Rose Farmstead</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/arboretum.webp" media="(max-width: 600px)">
+                    <img class="lazy" loading="lazy" src="images/arboretum.webp" alt="Overland Park Arboretum" width="700" height="350">
+                    <figcaption>Overland Park Arboretum</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/deanna-rose-small.webp" media="(max-width: 600px)">
+                    <img class="lazy" loading="lazy" src="images/op-farmers-mkt.webp" alt="Overland Park Farmers Market" width="700" height="350">
+                    <figcaption>Overland Park Farmers Market</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/deanna-rose-small.webp" media="(max-width: 600px)">
+                    <img class="lazy" loading="lazy" src="images/prairiefire.webp" alt="PrairieFire Museum" width="700" height="350">
+                    <figcaption>PrairieFire Museum</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/deanna-rose-small.webp" media="(max-width: 600px)">
+                    <img class="lazy" loading="lazy" src="images/jccc.webp" alt="Johnson County Community College" width="700" height="350">
+                    <figcaption>Johnson County Community College</figcaption>
+                </picture>
+                <picture>
+                    <source srcset="images/deanna-rose-small.webp" media="(max-width: 600px)">
+                    <img class="lazy" loading="lazy" src="images/scheels-soccer.webp" alt="Scheels Soccer Complex" width="700" height="350">
+                    <figcaption>Scheels Soccer Complex</figcaption>
+                </picture>
+            </section>
+        </section>
+    </max-width>
+
     <footer>
         <div class="footer-container">
-            <div class="footer-item address">
-                <h4>Overland Park Chamber of Commerce</h4>
-                <p>9001 W 110th St #150</p>
-                <p>Overland Park, KS 66210</p>
-                <a href="info@opchamber.org">info@opchamber.org</a>
-                <p>913-491-3600</p> 
-            </div>
-            <div class="footer-item social">
-                <a href="http://www.youtube.com" target="_blank"> <img src="images/youtube-icon.png" alt="Youtube"></a>
-                <a href="http://www.instagram.com" target="_blank"> <img src="images/instagram-icon.png"
-                        alt="Instagram"></a>
-                <a href="http://www.x.com" target="_blank"> <img src="images/x-icon.png" alt="X"></a>
-            </div>
-            <div class="footer-item project">
-                <p>WDD231 Class Project</p>
-                <p>Cris Altman</p>
-                <p>©️<span id="currentyear"></span> Overland Park Chamber of Commerce</p>
-                <p>Last Modification: <span id="lastModified"></span></p>
-            </div>
+            <p>Overland Park Chamber of Commerce</p>
+            <p>9001 W 110th St #150</p>
+            <p>Overland Park, KS 66210</p>
+            <p>913-491-3700</p> 
+        </div>
+        <div class="footer-container">
+            <p>WDD230 Class Project</p>
+            <p>©️<span id="currentyear"></span> Cris Altman</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
 </body>
+
 </html>
