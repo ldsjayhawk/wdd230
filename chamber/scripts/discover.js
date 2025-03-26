@@ -33,6 +33,7 @@ images.forEach(image => {
 let days = 0;
 let today = Date.now();
 let dayTense = 'days'
+let visitMessage = document.getElementById("visitMessage");
 
 //get values stored in local storage
 let visits = Number(window.localStorage.getItem("visits-ls")) || 0;

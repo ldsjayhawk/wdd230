@@ -271,16 +271,19 @@ figcaption {
 .sidebar {
     padding: 10px;
     border: 1px solid #000;
-    margin: 10px;
+    margin: 10px auto;
+    font-family: var(--paragraph-font);
+    width: 90%;
 }
 
 picture {
     margin: 0 auto;
-    max-width: 400;
 }
 
-figcaption {
+picture span {
     margin: 10px;
+    font-family: var(--paragraph-font);
+    padding-bottom: 10px;
 }
 
 .lazy {
