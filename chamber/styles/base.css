@@ -5,6 +5,13 @@
     --paragraph-font: Manjari, sans-serif;
 }
 
+header p, 
+main p, 
+main li,
+footer p {
+    font-family: var(--paragraph-font);
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -12,13 +19,6 @@ header {
     color: #000;
     margin: 1.25rem;
     padding: 0 10px 0 10px;
-}
-
-header p {
-    color:#000;
-    font-family: var(--heading-font);
-    font-size: 1.5em;
-    margin: 0;
 }
 
 .headerpic {
@@ -32,16 +32,6 @@ h1 {
 
 h1, h2, h3{
     font-family: var(--heading-font);
-}
-
-h2 {
-    color:#000;
-    margin: 0 0 0 20px;
-}
-
-main p {
-    font-family: var(--paragraph-font);
-    color: #000;
 }
 
 #menu {
@@ -99,15 +89,28 @@ main p {
     flex: 1;
 }
 
-nav a {
-    text-decoration: none;
-}
-
 .navigation a:hover {
     font-weight: 700;
     background-color: #000;
     border: #fff solid 2px;
     border-radius: 10px;
+}
+
+.navigation .active {
+    font-weight: 700;
+    background-color: #000;
+    border: #fff solid 2px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+h2 {
+    color:#000;
+    margin: 0 0 0 20px;
+}
+
+main p {
+    color: #000;
 }
 
 .social {
@@ -130,7 +133,6 @@ footer p {
     font-size: .75em;
     color: #fff;
     text-align: center;
-    font-family: var(--paragraph-font);
     margin: 0;
 }
 
@@ -233,38 +235,6 @@ figcaption {
 #condition {
     padding-bottom: 10px;
 }
-.card-container {
-    display: grid;
-    padding: 10px;
-    align-items: stretch;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-    grid-template-columns: auto auto auto;
-}
-
-.member {   
-    background-color: #DAF7FF;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px #000;
-    max-width: 50%;
-}
-
-.member a { 
-    color: blue;
-}
-
-.member a:visited { 
-    color: blue;
-}
-
-.member img {
-    background-color: #000;
-    color: #fff;
-    box-shadow: 0 0 10px #646464;
-    margin: 10px;
-}
 
 /* ...directory page... */
 
@@ -304,6 +274,209 @@ picture span {
     padding: 5px;
 }
 
-footer {
-    text-align: center; 
+/* ...join page... */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.form {
+    grid-column: 1;
+}
+
+.level {
+    grid-column: 2;
+    margin: 3rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    max-width: 90%;
+    text-align: center;
+}
+
+.level ul {
+    border: 1px solid #ddd;
+    background-color: #DAF7FF;
+    max-width: 50%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin: 0 auto .5rem auto;
+    text-align: left;
+}
+
+.level h3 {
+    max-width: 55%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*----------- FORM STYLING --------------*/
+form {
+    padding: 10px;
+}
+
+.join {
+    max-width: 90%;
+}
+
+.join fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    font-family: var(--heading-font);
+}
+
+.join legend {
+    color: darkgreen;
+    font-weight: 700;
+    padding: 0 .5rem;
+}
+
+.join label {
+    display: block;
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+.join input[type="text"],
+.join input[type="tel"],
+.join input[type="email"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.join input[type="radio"],
+{
+    margin-right: 6px;
+}
+
+.join input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    padding: .75rem;
+    margin: -1rem 4% 2rem 4%;
+    background-color: darkgreen;
+    color: #fff;
+    border: #fff solid 2px;
+    border-radius: 10px;
+    background-image: linear-gradient(darkgreen, green);
+    box-shadow: 1px 1px 4px #999;
+    font-family: var(--paragraph-font);
+    font-weight: 700;
+}
+
+.join input:required {
+    border: solid 2px #ff4d4d;
+}
+
+.join input:required:valid {
+    border: solid 2px green;
+}
+
+#required {
+    font-size: small;
+    padding-left: 2rem;
+}
+
+#timestamp {
+    display: none;
+}
+
+.thanks {
+    text-align: center;
+    font-family: var(--paragraph-font);
+}
+
+
+/* ...directory page... */
+
+/* .flex-box {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    gap: 5px;
+    align-items: stretch;
+    color: #000;
+} */
+
+.selection {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0;
+}
+
+.selection ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    gap: 5px;
+    flex: 1;
+    list-style-type: none;
+    align-items: stretch;
+}
+
+.selection li {
+    display: block;
+}
+
+.selection a {
+    text-decoration: none;
+    color: #000;
+    background-color: #DAF7FF;
+    padding: 10px;
+    /* display: block; */
+    border-radius: 10px;
+}
+
+.selection a:hover {
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.card-container {
+    display: grid;
+    padding: 10px;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+}
+
+.member {   
+    background-color: #DAF7FF;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+.member a { 
+    color: blue;
+}
+
+.member a:visited { 
+    color: blue;
+}
+
+.member img {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 10px #646464;
+    margin: 10px;
+}
+
+    
