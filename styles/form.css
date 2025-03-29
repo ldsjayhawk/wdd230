@@ -197,3 +197,73 @@ footer {
     color: #fff;
     padding: 5px;
 }
+
+/*** form ***/
+
+form {
+    margin: 10px;
+}
+
+.register fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    font-family: var(--heading-font);
+}
+
+.register legend {
+    color: #000;
+    font-weight: 700;
+    padding: 0 .5rem;
+}
+
+.register label {
+    display: block;
+    padding: 1rem;
+    font-size: .9rem;
+}
+
+.register input[type="text"],
+.register input[type="tel"],
+.register input[type="email"],
+.register input[type="password"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.register input[type="radio"],
+{
+    margin-right: 6px;
+}
+
+.register input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    padding: .75rem;
+    margin: -1rem 4% 2rem 4%;
+    color: #fff;
+    border: #fff solid 2px;
+    border-radius: 10px;
+    background-color: darkblue;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, darkblue, purple);    
+    box-shadow: 1px 1px 4px #999;
+    font-family: var(--paragraph-font);
+    font-weight: 700;
+}
+
+.register input:required {
+    background-color: #fcd8d8;
+}
+
+.register input:required:valid {
+    border: solid 2px green;
+}

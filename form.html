@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Cris Altman - WDD 230 - Team Assignment - Forms</title>
+        <meta name="description" content="Cris Altman - WDD 230 - Team Assignment - Forms">
+        <meta name="author" content="Cris Altman">
+    
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap"
+            rel="stylesheet">
+    
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/larger.css">
+    
+        <!-- JAVASCRIPT -->
+        <script src="scripts/home.js" defer></script>
+        <link rel="icon" href="favicon.ico">
+    
+        <!-- SOCIAL MEDIA -->
+        <meta property="og:title" content="WDD 230 - Team Assignment Forms - Cris Altman">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ldsjayhawk.github.io/wdd230/images/cris-rebecca.jpg">
+        <meta property="og:image" content="https://ldsjayhawk.github.io/wdd230/images/sunflower.png">
+    </head>
+    <body>
+        <header>
+            <a id="mode" href="#" aria-label="dark / light mode">🌙</a>
+            <div class="profile">
+                <img src="images/cris-rebecca.jpg" alt="Cris Altman" width="150" height="200">
+                <span>Cris Altman</span>
+            </div>
+            <nav>
+                <a id="menu" href="#" aria-label="navgation menu"></a>
+                <ul class="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="https://ldsjayhawk.github.io/wdd230/chamber/index.html">Chamber</a></li>
+                    <li><a href="week01/chamber-site-plan.html">Siteplan</a></li>
+                    <li><a href="#">Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2></h2>
+            <form method = "get" action = "thankyou.html" class="register">
+                <fieldset>
+                    <legend>A</legend>
+                        <label>Username* <input type = "text" name = "user" id="user" required></label>
+                        <label>Password* <input type = "password" name = "pass" id="pass" pattern="[A-Za-z]{8}" required></label>
+                        <label>Repeat Password* <input type = "password" name = "repeat" id="pass" pattern="[A-Za-z]{8}" required></label>
+                        <label>Email* <input type = "email" name = "email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder = "someone@gmail.com" required></label>
+                        <label>Rating <input type = "range" name = "rating" id="rating" min="0" max="10" value="0" step="1" list="rangevalues"></label>
+                            <datalist id="rangevalues">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                </datalist>
+                </fieldset>
+                <div>
+                    <span id="timestamp"></span>
+                </div>
+                <input type="submit" value="Register">
+            </form>
+        </main>
+    </body>
+    <footer>
+        <p>©️<span id="currentyear"></span> Cris Altman - Kansas </p>
+        <p> Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</html>
