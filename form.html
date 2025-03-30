@@ -49,12 +49,12 @@
         <main>
             <form method = "get" action = "record.html" class="register">
                 <fieldset>
-                    <span id="message"></span>
                     <legend>User Registration</legend>
                         <label>Username* <input type = "text" name = "user" id="user" required></label>
-                        <label>Password (must be 8 numbers and letters)* <input type = "password" name = "pass" id="pass" pattern="[A-Za-z0-9]{8}" required></label>
-                        <label>Repeat Password* <input type = "password" name = "repeat" id="repeat" pattern="[A-Za-z0-9]{8}" required></label>
-                        <label>Email* <input type = "email" name = "email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder = "someone@gmail.com" required></label>
+                        <label>Password (must be 8 numbers and letters)* <input type = "password" name = "pass" id="pass" pattern="[A-Za-z0-9]{8,}" required></label>
+                        <label>Repeat Password* <input type = "password" name = "repeat" id="repeat" pattern="[A-Za-z0-9]{8,}" required></label>
+                        <span id="message"></span>
+                        <label>Email* <input type = "email" name = "email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder = "someone@byui.edu" required></label>
                         <label>Rating <input type = "range" name = "rating" id="rating" min="0" max="10" value="0" step="1" list="rangevalues"></label>
                             <datalist id="rangevalues">
                                 <option value="0">0</option>
