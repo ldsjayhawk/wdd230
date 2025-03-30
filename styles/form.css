@@ -79,6 +79,10 @@ h1 {
     content: "❌";
 }
 
+nav a {
+    text-decoration: none;
+}
+
 .navigation ul {
     padding: 0;
 }
@@ -87,7 +91,6 @@ h1 {
     list-style-type: none;
     margin: 0 auto;
     max-width: 500px;
-    padding: 20px 0 0 0;
 }
 
 .navigation li {
@@ -152,6 +155,10 @@ h2 {
 
 main {
     align-items: center;
+}
+
+main h3 {
+    text-align: center;
 }
 
 /* Class Selectors */
@@ -222,6 +229,7 @@ form {
     display: block;
     padding: 1rem;
     font-size: .9rem;
+    font-weight: 700;
 }
 
 .register input[type="text"],
@@ -239,7 +247,22 @@ form {
     max-width: 400px;
 }
 
-.register input[type="radio"],
+.register input[type="range"]
+{
+    display: block;
+    width: 40%;
+}
+
+#rangevalues {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    color: #000;
+    padding-left: 20px;
+    gap: 22px;
+}
+
+.register input[type="radio"]
 {
     margin-right: 6px;
 }
@@ -265,5 +288,7 @@ form {
 }
 
 .register input:required:valid {
-    border: solid 2px green;
+    background-color: #c2ebc2;
 }
+
+

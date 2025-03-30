@@ -20,7 +20,6 @@
     
         <!-- JAVASCRIPT -->
         <script src="scripts/home.js" defer></script>
-        <script src="scripts/form.js" defer></script>
         <link rel="icon" href="favicon.ico">
     
         <!-- SOCIAL MEDIA -->
@@ -29,6 +28,9 @@
         <meta property="og:url" content="https://ldsjayhawk.github.io/wdd230/images/cris-rebecca.jpg">
         <meta property="og:image" content="https://ldsjayhawk.github.io/wdd230/images/sunflower.png">
     </head>
+     
+<!-- BODY -->
+
     <body>
         <header>
             <a id="mode" href="#" aria-label="dark / light mode">🌙</a>
@@ -39,43 +41,19 @@
             <nav>
                 <a id="menu" href="#" aria-label="navgation menu"></a>
                 <ul class="navigation">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html"">Home</a></li>
                     <li><a href="https://ldsjayhawk.github.io/wdd230/chamber/index.html">Chamber</a></li>
                     <li><a href="week01/chamber-site-plan.html">Siteplan</a></li>
-                    <li><a href="#">Form</a></li>
+                    <li><a href="form.html">Form</a></li>
                 </ul>
             </nav>
         </header>
+        <!-- CONTENT  HERE -->
         <main>
-            <form method = "get" action = "record.html" class="register">
-                <fieldset>
-                    <span id="message"></span>
-                    <legend>User Registration</legend>
-                        <label>Username* <input type = "text" name = "user" id="user" required></label>
-                        <label>Password (must be 8 numbers and letters)* <input type = "password" name = "pass" id="pass" pattern="[A-Za-z0-9]{8}" required></label>
-                        <label>Repeat Password* <input type = "password" name = "repeat" id="repeat" pattern="[A-Za-z0-9]{8}" required></label>
-                        <label>Email* <input type = "email" name = "email" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder = "someone@gmail.com" required></label>
-                        <label>Rating <input type = "range" name = "rating" id="rating" min="0" max="10" value="0" step="1" list="rangevalues"></label>
-                            <datalist id="rangevalues">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </datalist>
-                </fieldset>
-                <div>
-                    <span id="timestamp"></span>
-                </div>
-                <input type="submit" value="Register">
-            </form>
+            <h3>Thank you for registering!</h3>
         </main>
+
+        <!-- FOOTER HERE -->   
         <footer>
             <p>©️<span id="currentyear"></span> Cris Altman - Kansas </p>
             <p> Last Modified: <span id="lastModified"></span></p>
