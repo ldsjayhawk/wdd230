@@ -55,6 +55,10 @@ h1, h2, h3{
     content: "➲ ";
 }
 
+nav a {
+    text-decoration: none;
+}
+
 .navigation {
     display: flex;
     flex-direction: column;
@@ -343,7 +347,7 @@ form {
 .join input[type="tel"],
 .join input[type="email"]
 {
-    background-color: #eee;
+    background-color: #f3fcff;
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
@@ -353,16 +357,16 @@ form {
     max-width: 400px;
 }
 
-.join input[type="radio"],
-{
+.join input[type="radio"] {
     margin-right: 6px;
+    padding: 10px;
 }
 
 .join input[type="submit"] {
     width: 100%;
     max-width: 400px;
     padding: .75rem;
-    margin: -1rem 4% 2rem 4%;
+    margin: 0 auto;
     background-color: darkgreen;
     color: #fff;
     border: #fff solid 2px;
