@@ -11,7 +11,6 @@ export async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data)
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -20,12 +19,6 @@ export async function apiFetch() {
                 console.log(error);
             }
     }
-
-// function convertTimestamp (timestamp) {
-//     const date = new Date(timestamp * 1000); // Convert to milliseconds
-// }
-
-
 
 function displayResults(data) {
     currentTemp.innerHTML = `${Math.round(data.main.temp)}`
