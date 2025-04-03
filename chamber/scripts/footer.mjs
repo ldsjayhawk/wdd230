@@ -21,6 +21,5 @@ export function lastModifiedDate() {
 };
 
 export function timestamp() {
-    timestamp = new Date().toLocaleDateString("en-US", options);
-    document.getElementById("timestamp").innerHTML = timestamp;
+    timestamp.innerHTML = new Date().toLocaleDateString("en-US", options);
 }
