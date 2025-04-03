@@ -23,6 +23,16 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
 });
 
+
+// visits
+let visits = Number(window.localStorage.getItem("visits-ls")) || 0;
+
+document.getElementById("visits").textContent = `Number of visits: ${visits}`;
+visits++;
+
+//set values in local storage
+localStorage.setItem("visits-ls", visits);
+
 // copyright year
 const d = new Date();
 let currentyear = d.getFullYear();

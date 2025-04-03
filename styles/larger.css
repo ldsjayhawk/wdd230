@@ -31,4 +31,23 @@
 		padding: 0 5% 0 5%;
 		gap: 20px;
 	}
+
+	.temple-label {
+		position: absolute;
+		top: 400px;
+		left: 300px;
+		color: #fff;
+		background-color: #2e2e60;
+		background-image: linear-gradient(to right, #710071, #2e2e60);
+		border: 1px solid #fff;
+		border-radius: 25px;
+		padding: 1.5rem;
+		box-shadow: 0 0 3rem #fff;
+		opacity: 0.75;
+	}
+
+	.map {
+		margin: 0 auto;
+		grid-column: 1/3;
+	}
 }

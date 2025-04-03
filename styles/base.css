@@ -168,18 +168,32 @@ main {
     align-items: center;
 }
 
+.temple-label {
+    position: absolute;
+	top: 325px;
+	left: 90px;
+    color: #fff;
+    background-color: #2e2e60;
+    background-image: linear-gradient(to right, #202020, #2e2e60);
+	border: 1px solid #fff;
+    border-radius: 25px;
+	padding: .2rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.9;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-evenly;
 }
 
-.card {
+.card, .map {
     border: 3px solid #969696;
     margin: 10px;
     padding: 0 0 20px 20px;
     box-shadow: 0 0 10px #404040;
-    /* grid-column: 1/1; */
+    align-items: center;
 }
 
 .card li {
