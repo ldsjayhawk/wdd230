@@ -63,3 +63,10 @@
 }
 
 }
+
+@media screen and (min-width: 940px) {
+
+    h1 {
+        padding-top: 50px;
+        margin: 0;
+    }

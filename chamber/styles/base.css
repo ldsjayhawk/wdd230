@@ -280,16 +280,17 @@ picture span {
 
 /* ...join page... */
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr; */
+    display: flex;
 }
 
-.form {
-    grid-column: 1;
+.form, .level {
+    /* grid-column: 1; */
+    flex: 1;
 }
 
 .level {
-    grid-column: 2;
     margin: 3rem 0;
     border: 1px solid #ddd;
     border-radius: 6px;

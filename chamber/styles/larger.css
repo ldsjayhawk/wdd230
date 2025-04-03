@@ -67,6 +67,17 @@ h1 {
     flex-direction: row;
 }
 
+/* join page */
+.container {
+    display: flex;
+}
+
+/* .form, .level {
+    /* grid-column: 1; */
+    flex: 1;
+} */
+
+
 /* ...directory page... */
 
 .grid-container {
@@ -79,7 +90,14 @@ h1 {
     align-items: center;
 }
 
-/* img:hover {
+picture:hover {
     box-shadow: 25px;
-} */
+    border: 0;
+}
+}
+
+/* join page */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
