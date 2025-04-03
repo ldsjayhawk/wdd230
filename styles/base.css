@@ -79,6 +79,10 @@ h1 {
     content: "❌";
 }
 
+nav a {
+    text-decoration: none;
+}
+
 .navigation ul {
     padding: 0;
 }
