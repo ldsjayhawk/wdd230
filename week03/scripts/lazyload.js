@@ -2,7 +2,7 @@
 const options = {
     day: "numeric",
     month: "long",
-    year: "numeric"
+    year: "numeric"                                                                         
 };
 
 const modifyDate = document.getElementById("lastModified");
