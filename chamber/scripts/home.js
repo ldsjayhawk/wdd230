@@ -3,9 +3,7 @@
 import { apiFetch } from "./weather.mjs";
 import { forecastFetch } from "./forecast.mjs";
 import { timestamp, copyrightYear, lastModifiedDate } from "./footer.mjs";
-// import { hamburgerMenu } from "./menu.mjs";
 
-// hamburgerMenu();
 // responsive menu
 const hamburger = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
