@@ -100,7 +100,7 @@
     }
 
     picture:hover {
-        box-shadow: 25px;
+        /* box-shadow: 25px; */
         border: 0;
     }
 }
