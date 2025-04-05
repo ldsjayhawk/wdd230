@@ -294,25 +294,22 @@ picture span {
 
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;    
+    justify-content: space-evenly;
 }
+
 
 .container h2 {
     width: 100%;
 }
 
-.form,
 .level {
-    flex: 1;
-}
-
-.level {
-    margin: 3rem 0;
+    margin: 3rem 1rem;
     border: 1px solid #ddd;
     border-radius: 6px;
     padding: .5rem 2%;
-    max-width: 90%;
     text-align: center;
 }
 
@@ -337,10 +334,7 @@ picture span {
 
 form {
     padding: 10px;
-}
-
-.join {
-    max-width: 90%;
+    margin-left: 1rem;
 }
 
 .join fieldset {
@@ -359,7 +353,7 @@ form {
 
 .join label {
     display: block;
-    padding: 1rem;
+    padding: .5rem;
     font-size: .9rem;
 }
 
@@ -385,7 +379,6 @@ form {
     width: 100%;
     max-width: 400px;
     padding: .75rem;
-    margin: 0 auto;
     background-color: darkgreen;
     color: #fff;
     border: #fff solid 2px;
