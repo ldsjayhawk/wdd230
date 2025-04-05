@@ -360,7 +360,7 @@ form {
 .join input[type="text"],
 .join input[type="tel"],
 .join input[type="email"],
-.join input[type="textarea"] {
+textarea {
     background-color: #f3fcff;
     display: block;
     border: solid 1px #999;
@@ -370,6 +370,8 @@ form {
     width: 100%;
     max-width: 400px;
 }
+
+.join 
 
 .join input[type="radio"] {
     margin-right: 6px;
