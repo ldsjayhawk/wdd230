@@ -9,6 +9,14 @@
     
 }
 
+@media screen and (min-width: 700px) {
+
+img.hover:hover {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+  }
+}
+
 @media screen and (min-width: 940px) {
 
     h1 {
@@ -99,8 +107,4 @@
         align-items: center;
     }
 
-    picture:hover {
-        /* box-shadow: 25px; */
-        border: 0;
-    }
 }

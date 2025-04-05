@@ -241,7 +241,6 @@ figcaption {
     margin-bottom: 10px;
 }
 
-
 .weather-image,
 .weather-info {
     flex: 1;
@@ -279,18 +278,9 @@ picture span {
 .images img {
     width: 100%;
     height: auto;
-}
-
-.lazy {
     margin: 0 auto;
     padding: 5px;
-    opacity: 0;
-    transition: .5s ease-in-out;
     background-color: black;
-}
-
-.lazy.visible {
-    opacity: 1;
 }
 
 #visitMessage {
@@ -309,7 +299,6 @@ picture span {
     gap: 2rem;
     justify-content: space-evenly;
 }
-
 
 .container h2 {
     width: 100%;
