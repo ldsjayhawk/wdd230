@@ -1,5 +1,5 @@
 // import statements
-// import { displayMembers } from "./directory";
+// import { displayMembers, displayList } from "./directory";
 import { apiFetch } from "./weather.mjs";
 // import { forecastFetch } from "./forecast.mjs";
 import { timestamp, copyrightYear, lastModifiedDate } from "./footer.mjs";

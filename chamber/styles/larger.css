@@ -53,8 +53,9 @@ img.hover:hover {
         flex: 1 1 100%;
     }
 
-    /* ...home page... */
-
+    /* ------------- */
+    /*   HOME PAGE   */
+    /* ------------- */
 
     .hero article h2 {
         font-family: var(--heading-font);
@@ -74,7 +75,10 @@ img.hover:hover {
         flex-direction: row;
     }
 
-    /* join page */
+    /* ------------- */
+    /*   JOIN PAGE   */
+    /* ------------- */
+
     .columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -94,8 +98,9 @@ img.hover:hover {
         max-width: 90%;
     }
 
-
-    /* ...directory page... */
+    /* ------------- */
+    /* DISCOVER PAGE */
+    /* ------------- */
 
     .grid-container {
         display: grid;
@@ -107,4 +112,15 @@ img.hover:hover {
         align-items: center;
     }
 
+    /* ------------- */
+    /* DIRECTORY PAGE*/
+    /* ------------- */
+
+        
+    #cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
 }
