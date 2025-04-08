@@ -9,7 +9,7 @@ async function getMemberData() {
     const response = await fetch(jsonfile);
     if (response.ok) {
       const data = await response.json();
-      console.table(data)
+    //   console.table(data)
       displayMembers(data.members)
       cards.classList.add("grid");
     }};
