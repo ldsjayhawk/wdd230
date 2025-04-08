@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  font-size: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+}
+
+h1 {
+  color: #000;
+  border-bottom: 1px solid #eee;
+  text-shadow: 0 0 15px #777;
+  width: 60%;
+}
+
+h2 {
+  color: #fff;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  color: #333;
+  margin: 7px 0 5px 0;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0;
+}
+
+.display button {
+    background-color: #DAF7FF;
+    color: #000;
+    border: 1px solid #7b7b7b;
+    width: 10%;
+    padding: .75rem;
+    margin: .5rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #999;
+    font-family: var(--paragraph-font);
+    font-weight: 700;
+}
+
+.display button:hover,
+.display button.active
+{
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+    border: #fff solid 1px;
+    border-radius: 10px; 
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: rgb(248, 248, 145);
+}
+
+main {
+  margin-left: 2rem;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #017faa;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cards.list {
+	display: flex;
+	flex-direction: column;
+}
+
+#cards.list section {
+	margin: 0;
+	padding: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#cards.list section > * {
+    margin: 0 1rem;
+}
+
+
+#cards.list section img {
+    display: none; 
+}
+
+#cards.list section h2, 
+#cards.list section p 
+{
+  text-align: left;
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+#cards.list section:nth-child(odd) {
+	background-color: #fff;
+}
+
+#cards.list section:nth-child(even) {
+	background-color: #017faa;
+    color: #fff;
+}
+
+img {
+  width: auto;
+	max-width: 325px;
+  box-shadow: 0 0 30px #777;
+  height: 200px;
+  border: 1px solid #333;
+  margin: 10px;
+}
+
+li > img {
+  width: auto;
+  height: 30px;
+}
+
+footer {
+  border-top: 1px solid #555;
+  padding: 20px;
+}
+
+.caption {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  border: 1px solid #ccc;
+  background-color: lightyellow;
+  padding: 0.25rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1rem 1fr;
+}
+
+.caption h6 {
+  position: absolute;
+  top: -2.3rem;
+  left: -0.25rem;
+}
+
+.caption > div {
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1px solid #bbb;
+}
+
+.caption > p {
+  font-size: 0.75rem;
+}
+
+.most {
+  background-color: #bed;
+}
+
+.fav {
+  background-color: skyblue;
+}
+
+.own {
+  background-color: rosybrown;
+}
+
+.un {
+	list-style: none;
+}
+
+.cards:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
