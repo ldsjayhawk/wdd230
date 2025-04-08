@@ -1,20 +1,23 @@
-const jsonfile = 'data/members.json'
-const cards = document.querySelector('#cards')
 const grid = document.querySelector("#grid");
 const list = document.querySelector("#list");
+
+const jsonfile = 'data/members.json'
+const cards = document.querySelector('#cards')
 let memberData = [];
 
 async function getMemberData() {
-    const response = await fetch(jsonfile)
-    const data = await response.json();
-    memberData = (data.members)
-    displayMembers(data.members);
-}
+    const response = await fetch(jsonfile);
+    if (response.ok) {
+      const data = await response.json();
+      console.table(data)
+      displayMembers(data.members)
+      cards.classList.add("grid");
+    }};
 
 const displayMembers = (members) => {
     cards.innerHTML = "";
     members.forEach((member) => {
-        let card = document.createElement("div")
+        let card = document.createElement("section")
         let companyname = document.createElement('h3')
         let logo = document.createElement('img')
         let address = document.createElement('p')
@@ -37,36 +40,28 @@ const displayMembers = (members) => {
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(url);
+        
         cards.appendChild(card);
         card.classList.add('member')
-    }); 
-}
+    });
+} 
 
-const displayList = (members) => {
-    cards.innerHTML = "";
-    members.forEach((member) => {
-        const li = document.createElement('li');
-        li.textContent = `${member.name}`
-        cards.appendChild(li);
-        });
-    };
+getMemberData();
 
 grid.addEventListener("click", () => {
-    cards.classList.add("grid");
-    cards.classList.remove("list");
-    displayMembers(membersData);
+	cards.classList.add("grid");
+	cards.classList.remove("list");
 
     grid.classList.add("active");
     list.classList.remove("active");
 });
 
+
 list.addEventListener("click", () => {
-    cards.classList.add("list");
-    cards.classList.remove("grid");
-    displayList(membersData);
+	cards.classList.add("list");
+	cards.classList.remove("grid");
 
     list.classList.add("active");
     grid.classList.remove("active");
 });
      
-getMemberData();
