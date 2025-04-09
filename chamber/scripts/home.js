@@ -1,8 +1,8 @@
 // import statements
 // import { displayMembers, displayList } from "./directory";
 import { apiFetch } from "./weather.mjs";
-// import { forecastFetch } from "./forecast.mjs";
-import { timestamp, copyrightYear, lastModifiedDate } from "./footer.mjs";
+import { forecastFetch } from "./forecast.mjs";
+import { copyrightYear, lastModifiedDate } from "./footer.mjs";
 
 // responsive menu
 const hamburger = document.querySelector('#menu');
@@ -63,10 +63,10 @@ const jsonfile = 'data/members.json'
 const currenttemp = document.querySelector('#current-temp')
 if (currenttemp)
     apiFetch();
-// forecastFetch();
+    forecastFetch();
 
 //timestamp
-timestamp();
+// timestamp();
 
 // footer info
 copyrightYear();

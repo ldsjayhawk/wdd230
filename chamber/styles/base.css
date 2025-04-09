@@ -207,6 +207,7 @@ figcaption {
 
 .events,
 .weather,
+.forecast,
 .spotlight {
     flex: 1;
     background-color: #DAF7FF;
@@ -224,25 +225,48 @@ figcaption {
     margin: 10px;
 }
 
-.weather-info p {
-    text-align: center;
-}
-
 #current-temp,
 #today-temp,
 #tomorrow-temp,
-#day-three-temp {
+#daytwo-temp, 
+#daythree-temp 
+{
     font-size: larger;
-    font-weight: 900;
-    margin-bottom: 10px;
+    font-weight: 700;
 }
 
-.weather-image,
-.weather-info {
+.weather-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.forecast-box {
+    display: flex;
+}
+
+.weather-info,
+.forecast
+{
+    text-align: center; 
     flex: 1;
     padding: 10px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+.weather-image figure,
+.forecast figure {
+    margin: 0 auto;
+}
+
+.weather-info p,
+.weather-image p,
+.forecast p {
+    margin: 0;
+    padding: 0;
 }
 
 #condition {
