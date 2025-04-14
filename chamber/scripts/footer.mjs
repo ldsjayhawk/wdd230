@@ -15,8 +15,6 @@ export function copyrightYear() {
 
 // set last modified date options
 export function lastModifiedDate() {
-
-    // create last modified date variable
     lastModified.innerHTML = new Date().toLocaleDateString("en-US", options);
 };
 

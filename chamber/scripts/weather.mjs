@@ -1,6 +1,6 @@
 // import { apiFetch } from "./fetch.mjs";
 
-const currentTemp = document.querySelector('#current-temp');
+const currentTemp = document.querySelector('#currentTemp');
 const highTemp = document.querySelector('#high');
 const lowTemp = document.querySelector('#low');
 const humidity = document.querySelector('#humidity');
