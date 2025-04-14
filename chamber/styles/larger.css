@@ -116,13 +116,12 @@ img.hover:hover {
     /* DIRECTORY PAGE*/
     /* ------------- */
 
-        
     #cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
-    .member:last-child {
+    .directory.grid .member:last-child {
         grid-column: 1 / -1;
         justify-self: center;
     }

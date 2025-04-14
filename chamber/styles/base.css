@@ -38,6 +38,8 @@ h3 {
     font-family: var(--heading-font);
 }
 
+/* Navigation */
+
 #menu {
     display: block;
     font-size: 1.5rem;
@@ -144,6 +146,26 @@ footer p {
 /*   HOME PAGE   */
 /* ------------- */
 
+#banner {
+    display: none;
+}
+
+#banner::after {
+    content: "❌";
+    padding: 10px;
+}
+
+#banner.show {
+    display: block;
+    background-color: #fb9090;
+    max-height: 65px;
+    font-family: var(--paragraph-font);
+    font-size: larger;
+    font-weight: 900;
+    text-align: center;
+    padding: 30px;
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -195,8 +217,7 @@ figcaption {
     text-align: center;
 }
 
-.info-box,
-.spotlight {
+.info-box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -207,18 +228,13 @@ figcaption {
 
 .events,
 .weather,
-.forecast,
-.spotlight {
+.forecast {
     flex: 1;
     background-color: #DAF7FF;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 10px;
-}
-
-.spotlight {
-    margin: 10px 10px 20px 10px;
-}
+}   
 
 .events,
 .weather {

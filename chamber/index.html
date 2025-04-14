@@ -20,10 +20,12 @@
         rel="stylesheet">
 
     <!-- javascript reference links -->
-    <script src="scripts/home.js" type="module"></script>
-    <script src="scripts/weather.mjs" type="module"></script>
-    <script src="scripts/forecast.mjs" type="module"></script>
-    <script src="scripts/footer.mjs" type="module"></script>
+    <script src="scripts/home.js" type="module" defer></script>
+    <script src="scripts/menu.mjs" type="module" defer></script>
+    <script src="scripts/spotlight.mjs" type="module" defer></script>
+    <script src="scripts/weather.mjs" type="module" defer></script>
+    <script src="scripts/forecast.mjs" type="module" defer></script>
+    <script src="scripts/footer.mjs" type="module" defer></script>
 
     <!-- css reference links -->
     <link rel="stylesheet" href="styles/base.css">
@@ -41,6 +43,8 @@
 
 <body>
     <!-- header -->
+    <div id="banner">
+    </div>
     <header>
         <div class="headerpic">
             <img src="images/opclocktower.webp" alt="Overland Park Clocktower" width="150">
@@ -101,7 +105,7 @@
                         </div>
 
                         <div class="weather-info">
-                            <p><span id="current-temp"></span></p>
+                            <p><span id="currentTemp"></span></p>
                             <p><span id="condition"></span></p>
                             <p><span id="high"></span></p>
                             <p><span id="low"></span></p>
@@ -151,9 +155,9 @@
                 
             </div>
             
-            <section class="spotlight">
+            <section>
                 <h3>Company spotlights</h3>
-                <p>Place holder for company spotlights</p>
+                <div class="spotlight" id="cards"></div>
             </section>
 
         </div>
