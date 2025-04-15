@@ -366,9 +366,19 @@ picture span {
 
 /*   FORM   */
 
+.form-container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
     padding: 10px;
     margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .join fieldset {
@@ -377,6 +387,7 @@ form {
     border-radius: 6px;
     padding: .5rem 2%;
     font-family: var(--heading-font);
+    width: 100%;
 }
 
 .join legend {
@@ -401,7 +412,7 @@ textarea {
     border-radius: 6px;
     padding: .75rem;
     color: #555;
-    width: 100%;
+    width: 96%;
     max-width: 400px;
 }
 
