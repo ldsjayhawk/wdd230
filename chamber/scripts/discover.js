@@ -1,13 +1,3 @@
-// hamburgerMenu();
-// responsive menu
-const hamburger = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamburger.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamburger.classList.toggle('open');
-});
-
 // intersectional observer to hold lazy loading images until they appear on screen
 const images = document.querySelectorAll ("img.lazy");
 const options = {
