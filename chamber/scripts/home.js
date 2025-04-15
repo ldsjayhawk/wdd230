@@ -1,10 +1,7 @@
 // import statements
-import { hamburgerMenu } from "./menu.mjs";
 import { apiFetch } from "./weather.mjs";
 import { forecastFetch } from "./forecast.mjs";
-import { copyrightYear, lastModifiedDate } from "./footer.mjs";
 
-hamburgerMenu();
 
 window.addEventListener('DOMContentLoaded', () => {
     const date = new Date();
@@ -20,14 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     };
     });
-
+    
     
 apiFetch();
 forecastFetch();
-
-//timestamp
-// timestamp();
-
-// footer info
-copyrightYear();
-lastModifiedDate();
