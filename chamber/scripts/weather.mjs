@@ -26,7 +26,7 @@ export async function apiFetch() {
         lowTemp.innerHTML = `Low Temp: ${Math.round(data.main.temp_min)}°F`;
         const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; 
         description.innerHTML = data.weather[0].description;
-        weatherIcon.setAttribute('SRC', iconsrc);
+        weatherIcon.setAttribute('src', iconsrc);
         weatherIcon.setAttribute('alt', data.weather[0].description);
         humidity.innerHTML = `Humidity: ${data.main.humidity}%`
 }
