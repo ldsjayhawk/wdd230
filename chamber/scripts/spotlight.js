@@ -1,6 +1,5 @@
 import { displayMembers } from "./display.mjs";
 
-
 const randomMembers = [];
 const cards = document.querySelector("#cards");
 const jsonfile = 'data/members.json'
