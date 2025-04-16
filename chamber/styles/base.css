@@ -241,6 +241,17 @@ figcaption {
     margin: 10px;
 }
 
+.events ul {
+    /* margin: 0 auto; */
+    padding: 0;
+}
+
+.events li {
+    list-style-type: none;
+    padding-top: 20px;
+    text-align: center;
+}
+
 #current-temp,
 #today-temp,
 #tomorrow-temp,
@@ -278,11 +289,15 @@ figcaption {
     margin: 0 auto;
 }
 
-.weather-info p,
+
 .weather-image p,
 .forecast p {
     margin: 0;
     padding: 0;
+}
+
+.weather-info p {
+    padding: 5px;
 }
 
 #condition {

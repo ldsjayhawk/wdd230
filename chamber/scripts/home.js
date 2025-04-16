@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const banner = document.querySelector('#banner');
 
     if(bannerDay === "Mon" || bannerDay === "Tue" || bannerDay === "Wed" ) {
-        banner.textContent = `Come to our meet and greet this Wednesday at 7:00 p.m.`;
+        banner.textContent = `Come to our Meet and Greet this Wednesday at 7:00 p.m.`;
         banner.classList.add('show');
 
         banner.addEventListener('click', () =>  {
