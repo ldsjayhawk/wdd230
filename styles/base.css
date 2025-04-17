@@ -207,6 +207,10 @@ main {
     padding: 0;
 }
 
+#assignments {
+    display: inline;
+    padding: 5px;
+}
 
 footer {
     font-size: .75em;
