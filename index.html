@@ -49,39 +49,43 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <div class="temple">
-            <picture>
-                <source srcset="images/kctemple-small.webp" media=" (max-width:600px)" width="400">
-                <img src="images/kctemple.webp" alt="Kansas City Missouri Temple" width="960" height="720">
-            </picture>
-        </div>
-        <div class="temple-label">
-            <p>Kansas City Temple</p>
-        </div>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="grid-container">
-            <!-- <span id="templecard"></span> -->
-            <section class="card">
-                <h2>Learning Activities</h2>
-                <div id="assignments"></div>
-            </section>
-            <section class="card">
-                <h2>Information</h2>
-                <ul id="info">
-                    <li><h3>Overland Park Weather</h3></li>
-                    <li><span id="current-temp"></span></li>
-                    <figure>
-                        <img id="weather-icon" src="" alt="">
-                        <figcaption><span id="figcaption"></span></figcaption>
-                    </figure>
-                    <li><span id="visits"></span></li>
-                </ul>
-            </section>
-            <section class="map">
-                <h2>Map</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12402.70843567656!2d-94.69338888624944!3d38.999865040652516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0ec5e45e920a9%3A0x19dc547dffeb0902!2s7100%20Hadley%20St%2C%20Overland%20Park%2C%20KS%2066204!5e0!3m2!1sen!2sus!4v1743656418702!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+    <main>
+        <div>
+            <div class="temple">
+                <picture>
+                    <source srcset="images/kctemple-small.webp" media=" (max-width:600px)" width="400">
+                    <img src="images/kctemple.webp" alt="Kansas City Missouri Temple" width="960" height="720">
+                </picture>
+            </div>
+            <div class="temple-label">
+                <p>Kansas City Temple</p>
+            </div>
+            <h1>WDD 230: Web Frontend Development</h1>
+            <div class="grid-container">
+                <!-- <span id="templecard"></span> -->
+                <section class="card">
+                    <h2>Learning Activities</h2>
+                    <div id="assignments"></div>
+                </section>
+                <section class="card">
+                    <h2>Information</h2>
+                    <h3>Overland Park Weather</h3>
+                    <div class="icon">
+                        <figure>
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption><span id="figcaption"></span></figcaption>
+                        </figure>
+                    </div>
+                    <ul id="info">
+                        <li><span id="current-temp"></span></li>
+                        <li><span id="visits"></span></li>
+                    </ul>
+                </section>
+                <section class="map">
+                    <h2>Map</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12402.70843567656!2d-94.69338888624944!3d38.999865040652516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0ec5e45e920a9%3A0x19dc547dffeb0902!2s7100%20Hadley%20St%2C%20Overland%20Park%2C%20KS%2066204!5e0!3m2!1sen!2sus!4v1743656418702!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </div>
         </div>
     </main>
     <footer>

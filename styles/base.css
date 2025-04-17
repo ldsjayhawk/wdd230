@@ -153,6 +153,14 @@ h2 {
     padding: 5px;
 }
 
+h3 {
+    text-align: center;
+}
+
+#weather-icon {
+    margin: 0 auto;
+}
+
 
 main {
     align-items: center;
@@ -188,6 +196,11 @@ main {
     justify-content: space-evenly;
 }
 
+.icon {
+    margin: 0 auto;
+    align-items: center;
+}
+
 .card, .map {
     border: 3px solid #969696;
     margin: 10px;
@@ -199,7 +212,7 @@ main {
 .card li {
     list-style-type: none;
     padding: 0;
-    margin: 10px 0 10px 0;
+    /* margin: 10px 0 10px 0; */
 }
 
 #info {
