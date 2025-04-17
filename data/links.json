@@ -1,86 +1,85 @@
 {
-    "weeks": [
-      {
-        "week": "Week 1",
-        "links": [
-          {
-            "url": "week01/holygrail.html",
-            "title": "Holy Grail"
-          },
-          {
-            "url": "week01/media-query.html",
-            "title": "Media Query"
-          }
-        ]
-      },
-      {
-        "week": "Week 2",
-        "links": [
-          {
-            "url": "",
-            "title": ""
-          }
-        ]
-      },
-      {
-        "week": "Week 3",
-        "links": [
-          {
-            "url": "week03/images/landscape.webp",
-            "title": "Webp Images"
-          },
-          {
-            "url": "week03/lazyload.html",
-            "title": "Lazy Loading"
-          },
-          {
-            "url": "week03/bom.html",
-            "title": "Local Storage"
-          }
-        ]
-      },
-      {
-        "week": "Week 4",
-        "links": [
-          {
-            "url": "https://codepen.io/ldsjayhawk/pen/YPzjgEW",
-            "title": "Pseudo Classes"
-          },
-          {
-            "url": "week04/tablebuild.html",
-            "title": "Table"
-          },
-          {
-            "url": "week04/form.html",
-            "title": "Form"
-          }
-        ]
-      },
-      {
-        "week": "Week 5",
-        "links": [
-          {
-            "url": "https://codepen.io/ldsjayhawk/pen/qEBLxqa",
-            "title": "Pseudo Elements"
-          },
-          {
-            "url": "week05/wardMember.json",
-            "title": "JSON"
-          },
-          {
-            "url": "week05/weather.html",
-            "title": "Weather"
-          }
-        ]
-      },
-      {
-        "week": "Week 6",
-        "links": [
-          {
-            "url": "",
-            "title": ""
-          }
-        ]
-      }
-    ]
-  }
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": [
+        {
+          "url": "week01/holygrail.html",
+          "title": "Holy Grail"
+        },
+        {
+          "url": "week01/media-query.html",
+          "title": "Media Query"
+        }
+      ]
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "https://codepen.io/ldsjayhawk/pen/vYoKXrj",
+          "title": "Responsive Navigation"
+        },
+        {
+          "url": "week02/bom.html",
+          "title": "Book of Mormon app"
+        },
+        {
+          "url": "https://codepen.io/ldsjayhawk/pen/vYoKXrj",
+          "title": "Responsive Navigation"
+        }
+      ]
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        {
+          "url": "week03/images/landscape.webp",
+          "title": "Webp Images"
+        },
+        {
+          "url": "week03/lazyload.html",
+          "title": "Lazy Loading"
+        },
+        {
+          "url": "week03/bom.html",
+          "title": "Local Storage"
+        }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        {
+          "url": "https://codepen.io/ldsjayhawk/pen/YPzjgEW",
+          "title": "Pseudo Classes"
+        },
+        {
+          "url": "week04/tablebuild.html",
+          "title": "Table"
+        },
+        {
+          "url": "week04/form.html",
+          "title": "Form"
+        }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        {
+          "url": "https://codepen.io/ldsjayhawk/pen/qEBLxqa",
+          "title": "Pseudo Elements"
+        },
+        {
+          "url": "week05/wardMember.json",
+          "title": "JSON"
+        },
+        {
+          "url": "week05/weather.html",
+          "title": "Weather"
+        }
+      ]
+    }
+  ]
+}

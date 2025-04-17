@@ -209,6 +209,9 @@ main {
 
 #assignments {
     display: inline;
+}
+
+#assignments div {
     padding: 5px;
 }
 
