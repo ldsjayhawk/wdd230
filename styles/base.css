@@ -157,14 +157,11 @@ h3 {
     text-align: center;
 }
 
-#weather-icon {
-    margin: 0 auto;
-}
-
 
 main {
     align-items: center;
 }
+
 
 /* Class Selectors */
 
@@ -196,11 +193,6 @@ main {
     justify-content: space-evenly;
 }
 
-.icon {
-    margin: 0 auto;
-    align-items: center;
-}
-
 .card, .map {
     border: 3px solid #969696;
     margin: 10px;
@@ -213,6 +205,33 @@ main {
     list-style-type: none;
     padding: 0;
     /* margin: 10px 0 10px 0; */
+
+}
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+
+.weather-container li {
+    padding: 10px;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+}
+
+img#weather-icon {
+    margin: 0;
+}
+
+
+.weather-container figure {
+    margin: 0;
 }
 
 #info {
